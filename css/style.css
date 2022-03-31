@@ -1,0 +1,589 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+  font-size: 16px;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1002px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+header .menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+header .menu .navegacion a {
+  margin: 0.1em 20px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 2px;
+  font-size: 2.2em;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: transparent;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header .menu .navegacion a:hover {
+  border-bottom: transparent;
+  background-color: transparent;
+  color: rgb(105, 2, 2);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  font-weight: bold;
+}
+
+header .menu .logo-menu a {
+  margin: 0.1em 20px;
+  color: rgb(10, 10, 10);
+  padding-bottom: 2px;
+  font-size: 2.2em;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: transparent;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
+/* ----- ----- MAIN ----- ----- */
+
+.main .contenedor {
+  overflow: visible;
+}
+
+.main .logo-header {
+  text-align: center;
+}
+
+.main .logo-header .foto {
+  margin-top: -35rem;
+}
+
+.main .logo-header .foto img {
+  vertical-align: top;
+  width: 30%;
+}
+
+.main .logo-header .texto {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 30px;
+  width: 80%;
+  margin: 15px auto 60px auto;
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+.main .logo-header .texto .titulo {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #740202;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main .logo-header .texto .profesion {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #111111;
+  text-align: center;
+
+}
+
+.main .Biography {
+  font-size: .5rem;
+  margin-bottom: 2rem;
+  color: #6e0101;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main .Biography .text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #6e0101;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main .Biography .contenedor .video {
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  flex-direction: column;
+  align-items: center
+}
+
+.titulo-biography {
+  color: rgb(255, 255, 255);
+  margin-bottom: 1em;
+  color: #740202
+}
+
+.main .Biography .contenedor .text p {
+  color: #6e0101;
+  margin: 0 1em 0 1em;
+  text-align: justify;
+}
+
+.videoYoutube {
+  width: 100%;
+  height: 300px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: solid 0.1em transparent;
+  ;
+}
+
+.tools {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #6e0101;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+
+
+footer .redes-sociales {
+  background: #2b2b2b;
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgb(245, 0, 115, 0) 33%, rgb(245, 0, 115, 0) 61%, rgba(0, 0, 0, 1) 100%), linear-gradient(to top, #2e2e2e 0%, #1a1919 33%, #636363 71%, rgb(32, 32, 32) 100%);
+  padding: 30px 0;
+}
+
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .redes-sociales .contenedor a {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  display: block;
+  margin: 10px;
+  border-radius: 20%;
+  width: 10%;
+}
+
+footer .redes-sociales .contenedor .github:hover {
+  background: #000000;
+}
+
+footer .redes-sociales .contenedor .twitter:hover {
+  background: #00038a;
+}
+
+footer .redes-sociales .contenedor .linkedin:hover {
+  background: #0077b5;
+}
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+
+@media screen and (min-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1500px) {
+  .main .enlaces-github a:hover .fa-github {
+    color: #000000;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .menu {
+    text-align: center;
+  }
+  .main .logo-header .foto {
+    margin-top: -23rem;
+  }
+  .main .logo-header .foto img {
+    width: 50%;
+  }
+  .main .logo-header .texto {
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0.8em;
+    padding: 0.7em;
+    border-color: rgb(255, 255, 255, 1);
+    border-width: 0.1em;
+    border-style: solid;
+  }
+  .main .logo-header .texto {
+    overflow: hidden;
+  }
+
+  .particles-js{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .main .Biography .contenedor {
+    flex-direction: column;
+  }
+  .main .Biography .contenedor .text {
+    width: 100%;
+  }
+  .main .Biography .contenedor .video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main .logo-header .texto {
+    font-size: 1em;
+  }
+  .main .logo-header .texto .profesion {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-menu {
+    display: none;
+  }
+  header .menu {
+    justify-content: center;
+  }
+}
+
+.main .list-project {
+  margin-top: -23rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.project {
+  width: 30%;
+  margin-bottom: 1.5em;
+  transition: transform 300ms ease 100ms;
+}
+
+.contenedor-projectos {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-between;
+ 
+}
+
+
+.info {
+  margin: 1em;
+  height: 30%;
+}
+
+.titulo-project {
+  margin-bottom: 0.5em;
+  color: #000000
+}
+
+.extracto {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  text-align: justify;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1.2em;
+  font-size: 1em;
+  
+  
+}
+
+.extractoinit{
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  text-align: justify;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display:block;
+}
+
+.main .enlaces-github {
+  text-align: center;
+  margin: 0 1em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main .enlaces-github a {
+  color: #909090;
+  margin-right: 0.55em;
+  margin-left: 0.55em;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  font-size: 2em;
+}
+
+.main .enlaces-github a:hover .fa-play-circle {
+  color: rgb(62, 131, 62);
+}
+
+@media screen and (max-width: 1000px) {
+  .main .logo-header .texto .titulo {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    line-height: 2.5rem;
+  }
+  .main .logo-header .texto .profesion {
+    font-size: 1.5rem;
+  }
+  .main .list-project {
+    flex-direction: column;
+    align-content: center;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+
+.main .tech-project {
+  text-align: justify;
+}
+
+.main .tech-project a {
+  display: inline-block;
+  color: #0c0c0c;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.focus-in-expand-fwd {
+  -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.body-type {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  padding: 20px;
+  color: #0a0a0a;
+}
+
+.type {
+  color: #0000;
+  background: linear-gradient(-90deg, #222222 5px, #0000 0) 10px 0, linear-gradient(#080808 0 0) 0 0;
+  background-size: calc(var(--n)*1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b .1s infinite steps(1), t calc(var(--n)*.05s) steps(var(--n)) forwards;
+}
+
+@keyframes t {
+  from {
+    background-size: 0 200%
+  }
+}
+
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0
+  }
+}
+
+.vibrate-1 {
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+/* ----------------------------------------------
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+.project:hover  > .contenedor-projectos .extracto {
+  display: block;
+}
+
+.contenedor-tools-icons  a{
+  text-decoration: none;
+}
+.contenedor-tools-icons  a img{
+  transition: transform .2s; 
+  margin-bottom: 1em;
+}
+.contenedor-tools-icons p {
+ background-color: rgb(255,255,255, 0.2);
+ margin :1em;
+ padding:1em;
+ border-radius:0.5em ;
+}
+
+.contenedor-tools-icons  a img:hover{
+  transform: scale(1.5);
+  margin-right: 1em;
+  margin-left: 1em; 
+}
