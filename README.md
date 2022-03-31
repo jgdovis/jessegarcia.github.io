@@ -5,7 +5,8 @@ This GitHub Portafolio page includes repositories for a website hosted on Github
 includes a demo 
 <!-- Link Live Demo -->
 ### Link Live Demo
-[Live Github Portafolio]()
+[Live Github Portafolio](https://jgdovis.github.io/jessegarcia.github.io/)
+
 
 To install this MITxPRO GitHub page project in your local machine, follow these steps:
 
